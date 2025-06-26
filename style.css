@@ -1,0 +1,135 @@
+body {
+  background: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pikachu {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.face {
+  background: #fcd947;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 10px #e0a900;
+}
+
+/* Ears */
+.ear {
+  width: 40px;
+  height: 100px;
+  background: #fcd947;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  border: 3px solid #000;
+  z-index: 0;
+}
+
+.left-ear {
+  top: -60px;
+  left: 0;
+  transform: rotate(-25deg);
+  background: linear-gradient(to top, black 40%, #fcd947 40%);
+}
+
+.right-ear {
+  top: -60px;
+  right: 0;
+  transform: rotate(25deg);
+  background: linear-gradient(to top, black 40%, #fcd947 40%);
+}
+
+/* Eyes */
+.eye {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+}
+
+.left-eye {
+  left: 40px;
+}
+
+.right-eye {
+  right: 40px;
+}
+
+.shine {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/* Cheeks */
+.cheek {
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+}
+
+.left-cheek {
+  left: 20px;
+}
+
+.right-cheek {
+  right: 20px;
+}
+
+/* Nose */
+.nose {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 60px;
+  height: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.smile-left,
+.smile-right {
+  width: 25px;
+  height: 20px;
+  border: 3px solid black;
+  border-top: none;
+  border-radius: 0 0 50% 50%;
+}
+
+.smile-left {
+  transform: rotate(-10deg);
+}
+
+.smile-right {
+  transform: rotate(10deg);
+}
